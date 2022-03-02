@@ -22,6 +22,22 @@
       height: 2.5rem;            /* Footer height */
       font-size: 12px;
       }
+      .video-container video{
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+      #myAudio{
+         position: absolute;
+         top: 80%;
+         padding: 8px 30px;
+         z-index: 10;
+         display: none;
+}
    </style>
    <head>
       <link rel="stylesheet" type="text/css" href="main.css" />
@@ -31,16 +47,22 @@
    <body>
       <div id="page-container">
          <div id="content-wrap">
+
          	<h1>HALA BINUKSAN MO PA TO </h1>
             <h2>ANO BANG GUSTO MO AKO?</h2>
             <button type="button" onclick="alert('Bakit di ka nag sasabi!')">Oo Yes!</button>
             <button type="button" onclick="alert('Oks oks Alis ka na Exit mo na!')">Hindi No!</button>
-            <audio controls autoplay hidden>
-              <source src="audio/canicallutonight.wav" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
          </div>
          <footer id="footer">Hule pero di' kulong</footer>
       </div>
+      <div class="video-container">
+      <video src="videos/paraluman.mp4" muted loop autoplay id="myVideo">
+      </video>
+    </div>
+    <audio controls autoplay loop id="myAudio">
+      <source src="sfx/paraluman.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
    </body>
 </html>
