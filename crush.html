@@ -31,13 +31,6 @@
         left: 0;
         z-index: -1;
       }
-      #myAudio{
-         position: absolute;
-         top: 80%;
-         padding: 8px 30px;
-         z-index: 10;
-         display: none;
-}
    </style>
    <head>
       <link rel="stylesheet" type="text/css" href="main.css" />
@@ -59,7 +52,7 @@
       <video src="videos/paraluman.mp4" muted loop autoplay id="myVideo">
       </video>
     </div>
-    <audio controls autoplay loop id="myAudio">
+    <audio controls autoplay loop hidden>
       <source src="audio/paraluman.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
